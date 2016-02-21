@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+	<title>QQ音乐</title>
+	<meta charset = "utf-8"/>
+	<link rel="stylesheet" type="text/css" href="public/stylesheets/index.css">
+	<script type="text/javascript" src="public/scripts/index.js"></script>
+</head>
+<body>
+	<audio  src="./music/1.mp3" id = "audio"></audio>  
+	<!-- controls -->
+	<div class="sence" id="sence">
+		<div class="foot">
+			<div class="musicHead"></div>
+			<div class="musicInfo">
+				<div class="info">
+					<span class = "songName" id="songName">听你想听的歌曲!</span>
+					<span class = "green"></span>
+				</div>
+				<div class="info songWriter" id="songWriter" style="color:#828282">QQ音乐</div>
+				<div class="info songTime" id="songTime" style="color:#828282;display:none"></div>
+				<div class="info songEnjoy" id="songEnjoy" style="display:none">
+					<div class="small love"></div>
+					<div class="small change"></div>
+					<div class="small weixin" id="weixin">
+						<div class="kuang" id="kuang">
+							<span class = "saomiao">
+								<span class="center"></span>
+								<span class="sanjiao"></span>
+							</span>
+							<span class="sewms">手机扫描二维码，唱这首歌</span>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="button">
+				<span class="size prev" id="prev">
+					<span id="prevSong">上一首([)</span>
+				</span>
+				<span class="size play" id="play1">
+					<span id="bofang">播放(P)</span>
+				</span>
+				<span class="size next" id="next">
+					<span id="nextSong">下一首(])</span>
+				</span>
+				<span class="size play_xunhuan" id="play_bt">
+					<span>列表循环</span>
+				</span>
+				<span class = "type" id="type">
+					<span class = "yiyang order" id='order'></span>
+					<span class = "yiyang unorder" id='unorder'></span>
+					<span class = "yiyang single" id='single'></span>
+					<span class = "yiyang xunhuan" id='xunhuan'></span>
+				</span>
+				<div class = "voice">
+					<div class = "tubiao" id="tubiao">
+						<span>点击设为静音(M)</span>
+					</div>
+					<div class = "jindutiao" id="jindutiao">
+						<div class="changColor" id="changColor"></div>
+						<div class="circle" id="circle"></div>
+						<span>音量调节</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="showList" id="showList">
+				<div class="num" id="num">12</div>
+				<span>展开播放列表</span>
+			</div>
+			<div class="rly" id="rly">
+				<span>显示歌词</span>
+			</div>
+			<div class="rlyKuang" id="rlyKuang">
+				<div class="closed" id="closed"></div>
+			</div>
+		</div>
+
+		<div class="bottom" id = "bottom">
+			<div class = "player-bar" id="player-bar"></div>
+			<div class = "player-download"></div>
+			<div class = "player-current" id="player-current"></div>
+			<div class = "player-process" id="player-process"></div>
+		</div>
+		<div class="time_show">
+			<p id="time_show">00:39</p>
+			<span id="footer_sanjiao"></span>
+		</div>
+	</div>
+
+	<div class="solid" id="solid">
+		<span>点击收起</span>
+	</div>
+
+	<div class="playing" id="playing">
+		<div class="playHead">
+			<div class="playingList">播放列表</div>
+			<div class="diantai">单曲电台列表</div>
+		</div>
+		<div class="clearAll" id="clearAll">清空列表</div>
+		<div class="closeList" id="closeList">
+			<span>收起播放列表</span>
+		</div>
+		<div class="mainDa" id="mainDa">
+			<div class="main" id="main"></div>
+		</div>
+	</div>
+
+	<!--<div class="myself">
+		<div class="topTitle">
+			<div class="myhouse">我的音乐库</div>
+			<div class="allAdd" id="allAdd"></div>
+		</div>
+		<div class="baseKuang">
+			<div class="changKuang" id="changKuang"></div>
+		</div>
+	</div>-->
+
+
+</body>
+</html>
